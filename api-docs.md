@@ -37,7 +37,7 @@ POST https://pendless.atomian.com/api/enqueue/
 | Parameter | Type   | Required | Description |
 |-----------|--------|----------|-------------|
 | procedure | string | Yes      | Must be `"enqueue"` |
-| url       | string | Yes      | Target URL (must be valid) |
+| url       | string | Yes      | Target URL (must be valid or "continue" to continue on the previous task's page) |
 | prompt    | string | Yes      | Instructions for the task |
 | title     | string | No       | Task title; defaults to timestamp+random |
 
@@ -155,3 +155,4 @@ All responses follow the **`ApiResponse` JSON structure**:
 ---
 
 This documentation, combined with the examples in each language folder, provides everything a developer needs to integrate with Pendless API quickly and safely.
+
