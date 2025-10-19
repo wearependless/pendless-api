@@ -12,7 +12,7 @@ Authorization: Bearer YOUR_API_KEY
 
 Required POST parameters:
 
-- `url` (string, must be a valid URL)  
+- `url` (string, must be a valid URL or "continue" to continue on the previous task's page)  
 - `prompt` (string) — instructions for the task  
 
 Optional:
@@ -103,3 +103,4 @@ fetch(endpoint, {
     "message": "Task status retrieved successfully"
 }
 ```
+
