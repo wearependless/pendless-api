@@ -14,7 +14,7 @@ Authorization: Bearer YOUR_API_KEY
 
 Required POST parameters:
 
-- `url` (string, must be a valid URL)  
+- `url` (string, must be a valid URL or "continue" to continue on the previous task's page)  
 - `prompt` (string) — instructions for the task  
 
 Optional:
@@ -121,3 +121,4 @@ print_r($response);
 ```
 
 > See also: [`examples/php/status.php`](../examples/php/status.php)
+
