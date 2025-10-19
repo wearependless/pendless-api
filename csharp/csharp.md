@@ -37,7 +37,7 @@ class Program
         var data = new
         {
             procedure = "enqueue",
-            url = "https://example.com/login",
+            url = "https://example.com/login", //can also be "continue" to continue on the previous task's page
             prompt = "Open the login page, enter username and password",
             title = "Browser Automation: Login"
         };
@@ -123,3 +123,4 @@ class Program
     "message": "Task status retrieved successfully"
 }
 ```
+
