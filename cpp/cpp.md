@@ -19,7 +19,7 @@ int main() {
 
     // Enqueue a task
     std::string enqueueResponse = api.enqueue(
-        "https://example.com/login",
+        "https://example.com/login", //can also be "continue" to continue on the previous task's page
         "Open the login page, enter username and password",
         "Browser Automation: Login"
     );
@@ -62,3 +62,4 @@ int main() {
     "message": "Task status retrieved successfully"
 }
 ```
+
