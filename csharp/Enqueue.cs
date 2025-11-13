@@ -8,7 +8,7 @@ class EnqueueExample
     static async Task Main()
     {
         string apiKey = "YOUR_API_KEY";
-        string endpoint = "https://pendless.atomian.com/api/enqueue/";
+        string endpoint = "https://app.pendless.com/api/enqueue/";
 
         var data = new
         {

@@ -14,7 +14,7 @@ Authorization: Bearer YOUR_API_KEY
 
 Required POST parameters:
 
-- `url` (string, must be a valid URL or "continue" to continue on the previous task's page)  
+- `url` (string, must be a valid URL)  
 - `prompt` (string) — instructions for the task  
 
 Optional:
@@ -27,7 +27,7 @@ Optional:
 <?php
 
 $apiKey = "YOUR_API_KEY";
-$endpoint = "https://pendless.atomian.com/api/enqueue/";
+$endpoint = "https://app.pendless.com/api/enqueue/";
 
 $data = [
     "procedure" => "enqueue",
@@ -79,7 +79,7 @@ Required POST parameter:
 <?php
 
 $apiKey = "YOUR_API_KEY";
-$endpoint = "https://pendless.atomian.com/api/enqueue/";
+$endpoint = "https://app.pendless.com/api/enqueue/";
 
 $data = [
     "procedure" => "status",
@@ -121,4 +121,3 @@ print_r($response);
 ```
 
 > See also: [`examples/php/status.php`](../examples/php/status.php)
-

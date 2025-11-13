@@ -32,12 +32,12 @@ class Program
     static async Task Main()
     {
         string apiKey = "YOUR_API_KEY";
-        string endpoint = "https://pendless.atomian.com/api/enqueue/";
+        string endpoint = "https://app.pendless.com/api/enqueue/";
 
         var data = new
         {
             procedure = "enqueue",
-            url = "https://example.com/login", //can also be "continue" to continue on the previous task's page
+            url = "https://example.com/login",
             prompt = "Open the login page, enter username and password",
             title = "Browser Automation: Login"
         };
@@ -86,7 +86,7 @@ class Program
     static async Task Main()
     {
         string apiKey = "YOUR_API_KEY";
-        string endpoint = "https://pendless.atomian.com/api/enqueue/";
+        string endpoint = "https://app.pendless.com/api/enqueue/";
 
         var data = new
         {
@@ -123,4 +123,3 @@ class Program
     "message": "Task status retrieved successfully"
 }
 ```
-

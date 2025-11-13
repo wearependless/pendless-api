@@ -26,7 +26,7 @@ Authorization: Bearer YOUR_API_KEY
 ## 🚀 API Endpoint
 
 ```
-POST https://pendless.atomian.com/api/enqueue/
+POST https://app.pendless.com/api/enqueue/
 ```
 
 > Only POST requests are allowed. Other HTTP methods return **405 – Method not allowed**.

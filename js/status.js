@@ -1,5 +1,5 @@
 const apiKey = "YOUR_API_KEY";
-const endpoint = "https://pendless.atomian.com/api/enqueue/";
+const endpoint = "https://app.pendless.com/api/enqueue/";
 
 const data = {
     procedure: "status",

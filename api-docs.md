@@ -21,7 +21,7 @@ Requests without a valid key return:
 ## 🚀 Endpoint
 
 ```
-POST https://pendless.atomian.com/api/enqueue/
+POST https://app.pendless.com/api/enqueue/
 ```
 
 > Only `POST` requests are allowed. Other methods return **HTTP 405** – Method not allowed.
@@ -37,7 +37,7 @@ POST https://pendless.atomian.com/api/enqueue/
 | Parameter | Type   | Required | Description |
 |-----------|--------|----------|-------------|
 | procedure | string | Yes      | Must be `"enqueue"` |
-| url       | string | Yes      | Target URL (must be valid or "continue" to continue on the previous task's page) |
+| url       | string | Yes      | Target URL (must be valid) |
 | prompt    | string | Yes      | Instructions for the task |
 | title     | string | No       | Task title; defaults to timestamp+random |
 
@@ -100,7 +100,28 @@ POST https://pendless.atomian.com/api/enqueue/
         "creation date": "2025-10-16 14:22:01",
         "execution date": "",
         "status": "pending",
-        "feedback": "",
+		"feedback":
+		{
+			"status":
+			[
+				{
+					"action": "",
+					"result": ""
+				}
+			],
+			"conversation":
+			[
+				{
+					"sender": "",
+					"message": ""
+				}
+			],
+			"collected":
+			[
+				""
+			]
+		}
+
         "result": ""
     },
     "message": "Task status retrieved successfully"
@@ -155,4 +176,3 @@ All responses follow the **`ApiResponse` JSON structure**:
 ---
 
 This documentation, combined with the examples in each language folder, provides everything a developer needs to integrate with Pendless API quickly and safely.
-

@@ -24,7 +24,7 @@ Optional:
 **Example:** browser automation task to log in.
 
 ```bash
-curl -X POST https://pendless.atomian.com/api/enqueue/ \
+curl -X POST https://app.pendless.com/api/enqueue/ \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{"procedure":"enqueue","url":"https://example.com/login","prompt":"Open the login page, enter username and password","title":"Browser Automation: Login"}'
 ```
@@ -50,7 +50,7 @@ Required POST parameter:
 - `uuid` (string, returned from `enqueue`)  
 
 ```bash
-curl -X POST https://pendless.atomian.com/api/enqueue/ \
+curl -X POST https://app.pendless.com/api/enqueue/ \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -d '{"procedure":"status","uuid":"TASK_UUID_HERE"}'
 ```

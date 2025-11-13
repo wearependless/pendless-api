@@ -14,7 +14,7 @@ Authorization: Bearer YOUR_API_KEY
 
 Required POST parameters:
 
-- `url` (string, must be a valid URL or "continue" to continue on the previous task's page)  
+- `url` (string, must be a valid URL)  
 - `prompt` (string) — instructions for the task  
 
 Optional:
@@ -34,7 +34,7 @@ int main() {
     CURLcode res;
 
     const char *api_key = "YOUR_API_KEY";
-    const char *endpoint = "https://pendless.atomian.com/api/enqueue/";
+    const char *endpoint = "https://app.pendless.com/api/enqueue/";
 
     const char *data = "{\"procedure\":\"enqueue\",\"url\":\"https://example.com/login\",\"prompt\":\"Open the login page, enter username and password\",\"title\":\"Browser Automation: Login\"}";
 
@@ -93,7 +93,7 @@ int main() {
     CURLcode res;
 
     const char *api_key = "YOUR_API_KEY";
-    const char *endpoint = "https://pendless.atomian.com/api/enqueue/";
+    const char *endpoint = "https://app.pendless.com/api/enqueue/";
 
     const char *data = "{\"procedure\":\"status\",\"uuid\":\"TASK_UUID_HERE\"}";
 
@@ -137,4 +137,3 @@ int main() {
     "message": "Task status retrieved successfully"
 }
 ```
-

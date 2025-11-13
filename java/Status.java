@@ -5,7 +5,7 @@ import java.net.URL;
 public class Status {
     public static void main(String[] args) throws IOException {
         String apiKey = "YOUR_API_KEY";
-        String endpoint = "https://pendless.atomian.com/api/enqueue/";
+        String endpoint = "https://app.pendless.com/api/enqueue/";
 
         String jsonInput = "{\"procedure\":\"status\",\"uuid\":\"TASK_UUID_HERE\"}";
 

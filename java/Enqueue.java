@@ -5,7 +5,7 @@ import java.net.URL;
 public class Enqueue {
     public static void main(String[] args) throws IOException {
         String apiKey = "YOUR_API_KEY";
-        String endpoint = "https://pendless.atomian.com/api/enqueue/";
+        String endpoint = "https://app.pendless.com/api/enqueue/";
 
         String jsonInput = "{\"procedure\":\"enqueue\",\"url\":\"https://example.com/login\",\"prompt\":\"Open the login page, enter username and password\",\"title\":\"Browser Automation: Login\"}";
 

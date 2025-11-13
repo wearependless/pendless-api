@@ -5,7 +5,7 @@
 
 PendlessApi::PendlessApi(const std::string& key) {
     apiKey = key;
-    endpoint = "https://pendless.atomian.com/api/enqueue/";
+    endpoint = "https://app.pendless.com/api/enqueue/";
 }
 
 static size_t WriteCallback(void* contents, size_t size, size_t nmemb, void* userp) {

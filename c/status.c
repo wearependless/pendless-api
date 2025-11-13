@@ -8,7 +8,7 @@ int main() {
     CURLcode res;
 
     const char *api_key = "YOUR_API_KEY";
-    const char *endpoint = "https://pendless.atomian.com/api/enqueue/";
+    const char *endpoint = "https://app.pendless.com/api/enqueue/";
 
     const char *data = "{\"procedure\":\"status\",\"uuid\":\"TASK_UUID_HERE\"}";
 

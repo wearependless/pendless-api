@@ -1,7 +1,7 @@
 import requests
 
 api_key = "YOUR_API_KEY"
-endpoint = "https://pendless.atomian.com/api/enqueue/"
+endpoint = "https://app.pendless.com/api/enqueue/"
 
 data = {
     "procedure": "enqueue",

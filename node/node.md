@@ -12,7 +12,7 @@ Authorization: Bearer YOUR_API_KEY
 
 Required POST parameters:
 
-- `url` (string, must be a valid URL or "continue" to continue on the previous task's page)  
+- `url` (string, must be a valid URL)  
 - `prompt` (string) — instructions for the task  
 
 Optional:
@@ -25,7 +25,7 @@ Optional:
 import fetch from "node-fetch";
 
 const apiKey = "YOUR_API_KEY";
-const endpoint = "https://pendless.atomian.com/api/enqueue/";
+const endpoint = "https://app.pendless.com/api/enqueue/";
 
 const data = {
     procedure: "enqueue",
@@ -71,7 +71,7 @@ Required POST parameter:
 import fetch from "node-fetch";
 
 const apiKey = "YOUR_API_KEY";
-const endpoint = "https://pendless.atomian.com/api/enqueue/";
+const endpoint = "https://app.pendless.com/api/enqueue/";
 
 const data = {
     procedure: "status",
@@ -107,4 +107,3 @@ console.log(json);
     "message": "Task status retrieved successfully"
 }
 ```
-
